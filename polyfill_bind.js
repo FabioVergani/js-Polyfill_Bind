@@ -4,7 +4,7 @@ FP=F.prototype,
 A=w.Array,
 AP=A.prototype;
 //
-FP.bind=FP.bind||function(){
+FP.bind=FP.bind||function(o){
  var S=AP.slice,i='prototype',f=this,g=function(){},
  b=function(){var e=this;return f.apply((e instanceof g)?e:o,i.concat(S.call(arguments)));};
  if(o=f[i]){g[i]=o;};
