@@ -4,7 +4,7 @@ var Fp=Function.prototype;
 
 if(!Fp.bind) {
   Fp.bind=function(x){
-	 function f(){};
+    function f(){};//Function()?
     function b(){var s=Slice;return e.apply(x,s(m,1).concat(s(arguments,0)));};
     var m=arguments, e=this, i='prototype', p=e[i];
     if(p){f[i]=p;}
